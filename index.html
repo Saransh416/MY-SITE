@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bubble Consult</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600&family=Roboto+Mono:wght@400;500&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <a href="#home" class="logo"><img src="images/img_txt.png" alt="Bubble Consult"></a>
+  <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <nav id="navMenu" class="nav-menu">
+    <a href="#projects">Projects</a>
+    <a href="#services">Services</a>
+    <a href="#about">About Us</a>
+    <a href="#blog">Blog</a>
+    <a href="#shop">Shop</a>
+    <div class="dropdown">
+      <button class="dropdown-btn" aria-expanded="false">Pages <img src="images/arrow_drop_down.png" alt=""></button>
+      <div class="dropdown-content">
+        <a href="#team">Team</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+    <a href="#contact" class="nav-cta">Get in touch</a>
+  </nav>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-card">
+      <img class="hero-img" src="images/rect_img.png" alt="Stacked blue 3D layers">
+      <div class="hero-text">
+        <img src="images/img_txt.png" alt="Bubble Consult" class="hero-logo">
+        <h1>Take Your Business To The Next Level</h1>
+        <div class="btn-row">
+          <a href="#contact" class="btn btn-light">Get Quote</a>
+          <a href="#contact" class="btn btn-blue">Contact us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BRANDS -->
+  <section id="projects" class="brands">
+    <h2>BRANDS WE'VE WORKED WITH</h2>
+    <div class="brand-logos">
+      <img src="images/super_food.jpg" alt="Super Food">
+      <img src="images/creative_logo.png" alt="Creative Studio">
+      <img src="images/In_motion_logo.png" alt="In Motion">
+      <img src="images/In_motion_logo.png" alt="In Motion">
+      <img src="images/abstract.jpg" alt="Abstract">
+      <img src="images/invision.png" alt="Invision Square">
+    </div>
+  </section>
+
+  <!-- WELCOME -->
+  <section id="about" class="welcome">
+    <div class="welcome-text">
+      <h2>Welcome To The Creative Bubble.</h2>
+      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+      <p class="muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
+      <a href="#services" class="btn btn-blue">Know about us</a>
+    </div>
+    <img class="welcome-img" src="images/bubble_drop.png" alt="Blue 3D bubbles">
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="services">
+    <h2>Our Services</h2>
+    <div class="service-grid">
+      <article class="service-card">
+        <img src="images/service2.png" alt="">
+        <div><h3>Brand Strategy</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><a href="#contact">More information</a></div>
+      </article>
+      <article class="service-card">
+        <img src="images/service1.png" alt="">
+        <div><h3>Brand Design</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><a href="#contact">More information</a></div>
+      </article>
+      <article class="service-card">
+        <img src="images/service2.png" alt="">
+        <div><h3>Brand Strategy</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><a href="#contact">More information</a></div>
+      </article>
+      <article class="service-card">
+        <img src="images/service1.png" alt="">
+        <div><h3>Brand Strategy</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><a href="#contact">More information</a></div>
+      </article>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <div class="contact-form-wrap">
+      <h2>Contact Us</h2>
+      <form id="contactForm" novalidate>
+        <p class="form-sub">Drop your contact details</p>
+        <div class="field-row">
+          <div class="field-label"><img src="images/american_flag.png" alt="US flag"><span>+1</span></div>
+          <div class="field-input">
+            <input type="tel" id="phone" placeholder="Phone number" aria-label="Phone number" required>
+            <small class="error" id="phoneErr"></small>
+          </div>
+        </div>
+        <div class="field-row">
+          <div class="field-label"><img src="images/mail.png" alt=""><span>Email</span></div>
+          <div class="field-input">
+            <input type="email" id="email" placeholder="you@example.com" aria-label="Email" required>
+            <small class="error" id="emailErr"></small>
+          </div>
+        </div>
+        <p class="form-sub">Write us a message</p>
+        <div class="field-input full">
+          <textarea id="message" rows="4" placeholder="Tell us how we can help..." aria-label="Message" required></textarea>
+          <small class="error" id="messageErr"></small>
+        </div>
+        <button type="submit" class="btn btn-dark">Submit</button>
+        <p class="success" id="formSuccess" role="status" hidden>Thank you! Your message has been received. We'll be in touch soon.</p>
+      </form>
+    </div>
+    <img class="contact-img" src="images/angle-bubble.png" alt="Blue 3D shape">
+  </section>
+
+  <!-- TEAM -->
+  <section id="team" class="team">
+    <h2>The Bubble Team</h2>
+    <div class="team-grid">
+      <img src="images/image1-frame.png" alt="Team member 1">
+      <img src="images/image2-frame.png" alt="Team member 2">
+      <img src="images/image3-frame.png" alt="Team member 3">
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials" class="testimonials">
+    <img class="testi-icon" src="images/msg-icon.png" alt="Testimonials icon">
+    <div class="testi-body">
+      <h2>Testimonials</h2>
+      <div class="carousel">
+        <button class="arrow" id="prevBtn" aria-label="Previous testimonial">&#10094;</button>
+        <div class="carousel-viewport" aria-live="polite">
+          <div class="carousel-track" id="carouselTrack">
+            <blockquote class="slide"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p><cite>-Mr. John Geller</cite></blockquote>
+            <blockquote class="slide"><p>Bubble Consult transformed how we present our brand. Their strategy work was sharp, creative and delivered right on time. Our leads have grown noticeably since launch.</p><cite>-Ms. Rachel Green</cite></blockquote>
+            <blockquote class="slide"><p>A responsive, thoughtful team that really listens. The new website feels modern and our customers keep telling us how easy it is to use on their phones.</p><cite>-Mr. Chandler Bing</cite></blockquote>
+          </div>
+        </div>
+        <button class="arrow" id="nextBtn" aria-label="Next testimonial">&#10095;</button>
+      </div>
+      <div class="dots" id="dots"></div>
+    </div>
+  </section>
+
+  <!-- BLOGS -->
+  <section id="blog" class="blogs">
+    <h2>Blogs &amp; Articles</h2>
+    <div class="blog-grid">
+      <figure><img src="images/blog1.png" alt="Blog 1"><figcaption>Lorem ipsum dolor sit Lorem ipsum dolor</figcaption></figure>
+      <figure><img src="images/blog2.png" alt="Blog 2"><figcaption>Lorem ipsum dolor sit Lorem ipsum dolor</figcaption></figure>
+      <figure><img src="images/blog3.png" alt="Blog 3"><figcaption>Lorem ipsum dolor sit Lorem ipsum dolor</figcaption></figure>
+    </div>
+  </section>
+</main>
+
+<!-- FOOTER -->
+<footer id="shop" class="footer">
+  <div class="footer-top">
+    <div class="footer-news">
+      <h3 class="footer-logo">Logo</h3>
+      <p>Join our newsletter to stay up to date on features and releases.</p>
+      <form id="newsForm" novalidate>
+        <input type="email" id="newsEmail" placeholder="Enter your email" aria-label="Newsletter email">
+        <button type="submit">Subscribe</button>
+      </form>
+      <small class="error" id="newsMsg"></small>
+      <p class="fine">By subscribing you agree to with our <a href="#">Privacy Policy</a> and provide consent to receive updates from our company.</p>
+    </div>
+    <div class="footer-cols">
+      <div><h4>Column One</h4><a href="#">Link One</a><a href="#">Link Two</a><a href="#">Link Three</a><a href="#">Link Four</a></div>
+      <div><h4>Column Two</h4><a href="#">Link One</a><a href="#">Link Two</a><a href="#">Link Three</a><a href="#">Link Four</a></div>
+    </div>
+    <div class="footer-social">
+      <h4>Follow Us</h4>
+      <a href="#"><img src="images/facebook.png" alt="">Facebook</a>
+      <a href="#"><img src="images/Instagram.png" alt="">Instagram</a>
+      <a href="#"><img src="images/Twitter.png" alt="">Twitter</a>
+      <a href="#"><img src="images/LinkedIn.png" alt="">LinkedIn</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>©2022, All right reserved.</span>
+    <div><a href="#">Privacy Policy</a><a href="#">Terms of Service</a><a href="#">Cookies Settings</a></div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
